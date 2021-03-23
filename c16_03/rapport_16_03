@@ -1,0 +1,340 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /home/stidsem4/iut/2021/controle/meriem.belbari/c16_03
+collected 7 items
+
+test_16_03.py F.FFFFF                                                    [100%]
+
+=================================== FAILURES ===================================
+_____________________________ Test1603sute.test_10 _____________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
+
+    def test_10(self):
+        try:
+            from .main  import Note
+        except:
+           assert False
+        try:
+>           Note.vider()
+E           AttributeError: type object 'Note' has no attribute 'vider'
+
+test_16_03.py:98: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
+
+    def test_10(self):
+        try:
+            from .main  import Note
+        except:
+           assert False
+        try:
+            Note.vider()
+        except:
+>           assert False
+E           AssertionError: assert False
+
+test_16_03.py:100: AssertionError
+----------------------------- Captured stdout call -----------------------------
+13.2
+(('eleve1', 'math', 13), ('eleve1', 'math', 12), ('eleve2', 'math', 13), ('eleve2', 'math', 14))
+13.0
+eleve1
+maths
+13
+eleve eleve1 matiere maths note 13
+_____________________________ Test1603sute.test_4 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
+
+    def test_4(self):
+        try:
+>           from main import moyenne_tuples
+
+test_16_03.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def puiss (chiffre, liste):
+      return [i** chiffre for i in liste]
+    
+    print(puiss(2,[3,5]))
+    
+    
+    #question 2
+    
+    def puiss_etoile (chiffre, *liste):
+      return [i** chiffre for i in liste]
+    
+    print(puiss_etoile(2,3,5))
+    
+    #question 3
+    
+    def mafonction(a, b , **options):
+      print(a)
+      print(b)
+      print(options)
+    
+    
+    mafonction(1,2, z=8)
+    
+    def somme2(z, y):
+       return z + y
+    
+    def somme3(x,y,z):
+      return x + y + z
+    
+    
+    def somme3(*a):
+      return sum(a)
+    
+    somme3(1,2,3)
+    
+    
+    
+    b = 1,2
+    
+    *a,c = 0, *b
+    print(a)
+    print(b)
+    a = *a,*b
+    print(a)
+    
+    print(somme3(*a))
+    
+    
+    #ca ne fonctionne pas avec somme2 car il y a 4 arguments alors que somme2 ne peut en supporter que 2.
+    
+    
+    
+    #0903
+    
+    #question1
+    
+    def somme(param1,param2):
+      return param1+param2
+    
+    print(somme(2,4))
+    
+    
+    #question2
+    
+    def test(a, b, c):
+      return a+b+c
+    
+    
+    print(test(2,3,4))
+    print(test(2,3,c= 4))
+    print(test(a=2, b=3, c=4))
+    
+    #print(test(a=2)) #manque b et c ne fonctionne pas
+    
+    #print(test(a=2, b=3, 12)) #ne comprends pas le c
+    
+    
+    #question3
+    
+    def test(a, b, c):
+      return a+b+c
+    
+    
+    valeurs = 2,4,5
+    
+    valeurs1 = [2,4,5]
+    dico = {'a': 3, 'b': 2, 'c':3 }
+    print(test(*valeurs1))
+    print(test(*valeurs))
+    print(test(**dico))
+    
+    
+    #question3.1
+    
+    
+    def puissance(a, b):
+      return a ** b
+    
+    
+    
+    valeurs = [[2,3], [3,3]]
+    print(valeurs)
+    def puissance(a, b):
+      return a ** b
+    
+    a,b= valeurs
+    print(a)
+    print(b)
+    
+    print(a[0])
+    
+    valeurs = [[2,3], [3,3]]
+    
+    def puiss1(valeurs):
+     for v in valeurs:
+       a,b= v
+       p= puissance(*v)
+       print(p)
+       print(v)
+    puiss1(valeurs)
+    
+    
+    #question4
+    
+    maliste = [1,2,3,5]
+    maliste.append(4)
+    print(maliste)
+    
+    
+    def append(liste,new):
+     return liste.append(str(new))
+    
+    print(maliste)
+    
+    print(append(maliste,7))
+    print(maliste)
+    
+    
+    #question5
+    
+    
+    #il manque l'argument
+>   append() # est valide
+E   TypeError: append() missing 2 required positional arguments: 'liste' and 'new'
+
+../main.py:145: TypeError
+----------------------------- Captured stdout call -----------------------------
+[9, 25]
+[9, 25]
+1
+2
+{'z': 8}
+[0, 1]
+(1, 2)
+(0, 1, 1, 2)
+4
+6
+9
+9
+9
+11
+11
+8
+[[2, 3], [3, 3]]
+[2, 3]
+[3, 3]
+2
+8
+[2, 3]
+27
+[3, 3]
+[1, 2, 3, 5, 4]
+[1, 2, 3, 5, 4]
+None
+[1, 2, 3, 5, 4, '7']
+_____________________________ Test1603sute.test_5 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
+
+    def test_5(self):
+        try:
+>           from .main  import Note, onotes
+E           ImportError: cannot import name 'onotes' from 'c16_03.main' (/home/stidsem4/iut/2021/controle/meriem.belbari/c16_03/main.py)
+
+test_16_03.py:33: ImportError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
+
+    def test_5(self):
+        try:
+            from .main  import Note, onotes
+        except:
+>           assert False
+E           AssertionError: assert False
+
+test_16_03.py:35: AssertionError
+_____________________________ Test1603sute.test_6 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
+
+    def test_6(self):
+>       from .main import Note, onotes
+E       ImportError: cannot import name 'onotes' from 'c16_03.main' (/home/stidsem4/iut/2021/controle/meriem.belbari/c16_03/main.py)
+
+test_16_03.py:41: ImportError
+_____________________________ Test1603sute.test_8 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
+
+    def test_8(self):
+        try:
+            from .main import Note
+        except ImportError:
+            assert False, "import de Note impossible"
+        try:
+>           from .main  import moyenne_Notes as mnotes
+E           ImportError: cannot import name 'moyenne_Notes' from 'c16_03.main' (/home/stidsem4/iut/2021/controle/meriem.belbari/c16_03/main.py)
+
+test_16_03.py:71: ImportError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
+
+    def test_8(self):
+        try:
+            from .main import Note
+        except ImportError:
+            assert False, "import de Note impossible"
+        try:
+            from .main  import moyenne_Notes as mnotes
+        except ImportError:
+            try:
+>               from .main  import moyenne_notes as mnotes
+E               ImportError: cannot import name 'moyenne_notes' from 'c16_03.main' (/home/stidsem4/iut/2021/controle/meriem.belbari/c16_03/main.py)
+
+test_16_03.py:74: ImportError
+
+During handling of the above exception, another exception occurred:
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
+
+    def test_8(self):
+        try:
+            from .main import Note
+        except ImportError:
+            assert False, "import de Note impossible"
+        try:
+            from .main  import moyenne_Notes as mnotes
+        except ImportError:
+            try:
+                from .main  import moyenne_notes as mnotes
+            except ImportError:
+>               assert False, "La fonction moyenne_notes n'est pas définie"
+E               AssertionError: La fonction moyenne_notes n'est pas définie
+E               assert False
+
+test_16_03.py:76: AssertionError
+_____________________________ Test1603sute.test_9 ______________________________
+
+self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
+
+    def test_9(self):
+        try:
+            from .main  import Note
+        except:
+           assert False
+>       assert hasattr(Note, 'instances')
+E       AssertionError: assert False
+E        +  where False = hasattr(<class 'c16_03.main.Note'>, 'instances')
+
+test_16_03.py:90: AssertionError
+=========================== short test summary info ============================
+FAILED test_16_03.py::Test1603sute::test_10 - AssertionError: assert False
+FAILED test_16_03.py::Test1603sute::test_4 - TypeError: append() missing 2 re...
+FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
+FAILED test_16_03.py::Test1603sute::test_6 - ImportError: cannot import name ...
+FAILED test_16_03.py::Test1603sute::test_8 - AssertionError: La fonction moye...
+FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
+========================= 6 failed, 1 passed in 0.08s ==========================
