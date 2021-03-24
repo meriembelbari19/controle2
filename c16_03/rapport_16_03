@@ -38,13 +38,31 @@ E           AssertionError: assert False
 
 test_16_03.py:100: AssertionError
 ----------------------------- Captured stdout call -----------------------------
-13.2
-(('eleve1', 'math', 13), ('eleve1', 'math', 12), ('eleve2', 'math', 13), ('eleve2', 'math', 14))
-13.0
+[('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12), ('eleve2', 'math', 13), ('eleve2', 'math', 14)]
+[('eleve1', 'math', 13), ('eleve1', 'physique', 15), ('eleve1', 'math', 13), ('eleve1', 'eco', 12), ('eleve1', 'eco', 13), ('eleve1', 'math', 12)]
+[('eleve1', 'math', 13), ('eleve1', 'math', 13), ('eleve1', 'math', 12)]
+[13, 13, 12]
+12.666666666666666
 eleve1
 maths
 13
 eleve eleve1 matiere maths note 13
+eleve eleve1 matiere math note 13
+eleve eleve1 matiere physique note 15
+eleve eleve1 matiere math note 13
+eleve eleve1 matiere eco note 12
+eleve eleve1 matiere eco note 13
+eleve eleve1 matiere math note 12
+eleve eleve2 matiere math note 13
+eleve eleve2 matiere math note 14
+Note('eleve1','math','13')
+Note('eleve1','physique','15')
+Note('eleve1','math','13')
+Note('eleve1','eco','12')
+Note('eleve1','eco','13')
+Note('eleve1','math','12')
+Note('eleve2','math','13')
+Note('eleve2','math','14')
 _____________________________ Test1603sute.test_4 ______________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
@@ -337,4 +355,4 @@ FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
 FAILED test_16_03.py::Test1603sute::test_6 - ImportError: cannot import name ...
 FAILED test_16_03.py::Test1603sute::test_8 - AssertionError: La fonction moye...
 FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
-========================= 6 failed, 1 passed in 0.07s ==========================
+========================= 6 failed, 1 passed in 0.11s ==========================
