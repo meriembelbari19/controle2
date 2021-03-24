@@ -1,12 +1,12 @@
-============================= test session starts ==============================
+================================================ test session starts ================================================
 platform linux -- Python 3.9.2, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
 rootdir: /home/stidsem4/iut/2021/controle/meriem.belbari/c16_03
 collected 7 items
 
-test_16_03.py F.FFFFF                                                    [100%]
+test_16_03.py F.FFFFF                                                                                         [100%]
 
-=================================== FAILURES ===================================
-_____________________________ Test1603sute.test_10 _____________________________
+===================================================== FAILURES ======================================================
+_______________________________________________ Test1603sute.test_10 ________________________________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
 
@@ -37,7 +37,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_10>
 E           AssertionError: assert False
 
 test_16_03.py:100: AssertionError
------------------------------ Captured stdout call -----------------------------
+----------------------------------------------- Captured stdout call ------------------------------------------------
 13.2
 (('eleve1', 'math', 13), ('eleve1', 'math', 12), ('eleve2', 'math', 13), ('eleve2', 'math', 14))
 13.0
@@ -45,7 +45,7 @@ eleve1
 maths
 13
 eleve eleve1 matiere maths note 13
-_____________________________ Test1603sute.test_4 ______________________________
+________________________________________________ Test1603sute.test_4 ________________________________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
 
@@ -54,7 +54,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_4>
 >           from main import moyenne_tuples
 
 test_16_03.py:16: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
     def puiss (chiffre, liste):
       return [i** chiffre for i in liste]
@@ -202,7 +202,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 E   TypeError: append() missing 2 required positional arguments: 'liste' and 'new'
 
 ../main.py:145: TypeError
------------------------------ Captured stdout call -----------------------------
+----------------------------------------------- Captured stdout call ------------------------------------------------
 [9, 25]
 [9, 25]
 1
@@ -231,7 +231,7 @@ E   TypeError: append() missing 2 required positional arguments: 'liste' and 'ne
 [1, 2, 3, 5, 4]
 None
 [1, 2, 3, 5, 4, '7']
-_____________________________ Test1603sute.test_5 ______________________________
+________________________________________________ Test1603sute.test_5 ________________________________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
 
@@ -254,7 +254,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_5>
 E           AssertionError: assert False
 
 test_16_03.py:35: AssertionError
-_____________________________ Test1603sute.test_6 ______________________________
+________________________________________________ Test1603sute.test_6 ________________________________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
 
@@ -263,7 +263,7 @@ self = <c16_03.test_16_03.Test1603sute testMethod=test_6>
 E       ImportError: cannot import name 'onotes' from 'c16_03.main' (/home/stidsem4/iut/2021/controle/meriem.belbari/c16_03/main.py)
 
 test_16_03.py:41: ImportError
-_____________________________ Test1603sute.test_8 ______________________________
+________________________________________________ Test1603sute.test_8 ________________________________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_8>
 
@@ -316,7 +316,7 @@ E               AssertionError: La fonction moyenne_notes n'est pas définie
 E               assert False
 
 test_16_03.py:76: AssertionError
-_____________________________ Test1603sute.test_9 ______________________________
+________________________________________________ Test1603sute.test_9 ________________________________________________
 
 self = <c16_03.test_16_03.Test1603sute testMethod=test_9>
 
@@ -330,11 +330,11 @@ E       AssertionError: assert False
 E        +  where False = hasattr(<class 'c16_03.main.Note'>, 'instances')
 
 test_16_03.py:90: AssertionError
-=========================== short test summary info ============================
+============================================== short test summary info ==============================================
 FAILED test_16_03.py::Test1603sute::test_10 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_4 - TypeError: append() missing 2 re...
+FAILED test_16_03.py::Test1603sute::test_4 - TypeError: append() missing 2 required positional arguments: 'liste' ...
 FAILED test_16_03.py::Test1603sute::test_5 - AssertionError: assert False
-FAILED test_16_03.py::Test1603sute::test_6 - ImportError: cannot import name ...
-FAILED test_16_03.py::Test1603sute::test_8 - AssertionError: La fonction moye...
+FAILED test_16_03.py::Test1603sute::test_6 - ImportError: cannot import name 'onotes' from 'c16_03.main' (/home/st...
+FAILED test_16_03.py::Test1603sute::test_8 - AssertionError: La fonction moyenne_notes n'est pas définie
 FAILED test_16_03.py::Test1603sute::test_9 - AssertionError: assert False
-========================= 6 failed, 1 passed in 0.08s ==========================
+============================================ 6 failed, 1 passed in 0.10s ============================================
